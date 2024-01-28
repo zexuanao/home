@@ -33,19 +33,19 @@
   </Transition>
 </template>
 <script setup>
-import { helloInit, checkDays } from "@/utils/getTime.js";
-import { HamburgerButton, CloseSmall } from "@icon-park/vue-next";
-import { mainStore } from "@/store";
-import { Icon } from "@vicons/utils";
-import Loading from "@/components/Loading.vue";
-import MainLeft from "@/views/Main/Left.vue";
-import MainRight from "@/views/Main/Right.vue";
+import config from "@/../package.json";
 import Background from "@/components/Background.vue";
 import Footer from "@/components/Footer.vue";
-import Box from "@/views/Box/index.vue";
-import MoreSet from "@/views/MoreSet/index.vue";
+import Loading from "@/components/Loading.vue";
+import { mainStore } from "@/store";
 import cursorInit from "@/utils/cursor.js";
-import config from "@/../package.json";
+import { checkDays, helloInit } from "@/utils/getTime.js";
+import Box from "@/views/Box/index.vue";
+import MainLeft from "@/views/Main/Left.vue";
+import MainRight from "@/views/Main/Right.vue";
+import MoreSet from "@/views/MoreSet/index.vue";
+import { CloseSmall, HamburgerButton } from "@icon-park/vue-next";
+import { Icon } from "@vicons/utils";
 
 const store = mainStore();
 

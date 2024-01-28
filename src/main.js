@@ -1,6 +1,6 @@
-import { createApp } from "vue";
-import "@/style/style.scss";
 import App from "@/App.vue";
+import "@/style/style.scss";
+import { createApp } from "vue";
 // 引入 pinia
 import { createPinia } from "pinia";
 import piniaPluginPersistedstate from "pinia-plugin-persistedstate";
@@ -21,3 +21,4 @@ navigator.serviceWorker.addEventListener("controllerchange", () => {
   console.log("站点已更新，刷新后生效");
   ElMessage("站点已更新，刷新后生效");
 });
+//注释
